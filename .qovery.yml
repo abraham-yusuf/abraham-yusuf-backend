@@ -5,17 +5,19 @@ application:
   storage: # qovery will attach automatically a SSD storage on /srv/app
     - name: data
       type: ssd
-      size: 5GB
+      cpu: 1
+      ram: 256MB
+      #size: 1GB
       mount_point: /srv/app
 databases:
 - type: postgresql # qovery will create a managed PostgreSQL database
-  version: 12
+  version: 11
   name: psql
 routers:
 - name: main
   custom_domains: # optional: only if you want to use your domain
   - branch: master
-    domain: my.domain.tld
+    #domain: my.domain.tld
   routes:
   - application_name: strapi
     paths:
