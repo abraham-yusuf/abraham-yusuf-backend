@@ -11,7 +11,7 @@ application:
       mount_point: /srv/app
 databases:
 - type: postgresql # qovery will create a managed PostgreSQL database
-  version: 11
+  version: 12
   name: psql
 routers:
 - name: main
