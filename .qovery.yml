@@ -5,7 +5,7 @@ application:
   storage: # qovery will attach automatically a SSD storage on /srv/app
     - name: data
       type: ssd
-      cpu: 1
+      cpu: 250m
       ram: 256MB
       #size: 1GB
       mount_point: /srv/app
