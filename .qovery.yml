@@ -18,8 +18,8 @@ routers:
 - name: main
   custom_domains: # optional: only if you want to use your domain
   - branch: master
-    #domain: my.domain.tld
+    domain: https://main-ire5loxgd5oc824n-svc.qovery.io
   routes:
-  - application_name: strapi
+  - application_name: abraham-yusuf
     paths:
     - /*
