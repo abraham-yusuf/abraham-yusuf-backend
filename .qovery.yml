@@ -2,6 +2,7 @@ application:
   name: abraham-yusuf-backend
   project: abraham-yusuf
   publicly_accessible: true
+  port: 8080
   storage: # qovery will attach automatically a SSD storage on /srv/app
     - name: data
       type: ssd
