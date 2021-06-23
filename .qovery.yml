@@ -1,0 +1,22 @@
+application:
+  name: GIVE_A_NAME_TO_YOUR_APP
+  project: GIVE_A_PROJECT_NAME
+  publicly_accessible: true
+  storage: # qovery will attach automatically a SSD storage on /srv/app
+    - name: data
+      type: ssd
+      size: 5GB
+      mount_point: /srv/app
+databases:
+- type: postgresql # qovery will create a managed PostgreSQL database
+  version: 12
+  name: psql
+routers:
+- name: main
+  custom_domains: # optional: only if you want to use your domain
+  - branch: master
+    domain: my.domain.tld
+  routes:
+  - application_name: strapi
+    paths:
+    - /*
