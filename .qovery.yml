@@ -1,6 +1,6 @@
 application:
-  name: GIVE_A_NAME_TO_YOUR_APP
-  project: GIVE_A_PROJECT_NAME
+  name: abraham-yusuf-backend
+  project: abraham-yusuf
   publicly_accessible: true
   storage: # qovery will attach automatically a SSD storage on /srv/app
     - name: data
